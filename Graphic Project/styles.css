@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #80ff80;
+}
+
+#intensity-control {
+  /*   position: absolute;
+  top: 20px;
+  right: 20px; */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+#nextLevelBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#winMessage {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: white;
+}
+
+#restartButton {
+  margin-top: 20px;
+  font-size: 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#timerDisplay {
+  /*   position: absolute;
+  top: 70px;
+  right: 20px; */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+#timeMessage {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#toggleViewBtn {
+  /*   position: absolute;
+  right: 20px; */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.menu-grid {
+  display: grid;
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  max-width: 160px;
+}
+
+.menu-grid>div,
+.menu-grid button {
+  border: none !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 12px !important;
+  margin: 0 !important;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.menu-grid>div {
+  gap: 8px;
+}
+
+.menu-grid button:hover {
+  cursor: pointer;
+}
+
+#winMessage {
+  background-color: white;
+  color: black;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+#winMessage h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#winMessage #timeMessage {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#winMessage #restartButton {
+  padding: 8px 24px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
